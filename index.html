@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1 id="main-title">PROGRAMADOR DE TAREAS</h1>
+    </header>
+
+    <div id="id-section" class="input-container">
+        <input type="text" id="student-id-input" placeholder="Ingresa tu ID de estudiante">
+        <button id="access-btn" class="btn btn-primary">Acceder</button>
+        <a href="https://drive.google.com/file/d/1FuGo7X1RlSAv0dkiEE0HJpYjvB6vdOci/view?usp=sharing" target="_blank">
+            <button id="download-btn" class="btn btn-download">Descargar Tutorial</button>
+        </a>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <div id="input-section">
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Escribe tu nueva tarea...">
+                <div class="button-group">
+                    <button id="add-task-btn" class="btn btn-primary">Ingresar Tarea</button>
+                    <button id="finish-btn" class="btn btn-secondary">Finalizar Ingreso</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <div class="board">
+                <div class="list" id="todo-list">
+                    <div class="list-header">
+                        <h3>Pendientes</h3>
+                    </div>
+                </div>
+
+                <div class="list" id="in-progress-list">
+                    <div class="list-header">
+                        <h3>En curso</h3>
+                    </div>
+                </div>
+
+                <div class="list" id="done-list">
+                    <div class="list-header">
+                        <h3>Hechas</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-container">
+            <button id="show-report-btn" class="btn btn-info">Mostrar Reporte de Progreso</button>
+        </div>
+    </div>
+    
+    <div id="report-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Reporte de Progreso</h2>
+            <div id="report-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
